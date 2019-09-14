@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
+import Map from './Map';
+import AppBar from './AppBar';
+
+const home = {
+   backgroundColor: "#a1b8ff",
+};
 export default class Home extends Component {
     render() {
        return (
-          <h1>Hello React!</h1>
+          <div style={home}>
+            <AppBar />
+            <Map />
+          </div>
        )
     }
 }
