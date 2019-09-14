@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 export default class Home extends Component {
     render() {
        return (
-          <h1>Hello React!</h1>
+          <div className = "home">
+            <h1>Food Locater</h1>
+          </div>
        )
     }
 }
