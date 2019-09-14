@@ -1,7 +1,7 @@
 {
   "name": "tex_mix",
   "version": "1.0.0",
-  "description": "A template for creating a full stack wep app with Flask, NPM, Webpack, and Reactjs",
+  "description": "A Full-Stack wep app with Flask, NPM, Webpack, and Reactjs to interact with Google Maps for food info",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Eyongkevin/portfolio_template.git"
+    "url": "git+https://github.com/AlexE543/hack-mit-2019"
   },
   "keywords": [
     "portfolio",
@@ -21,12 +21,12 @@
     "npm",
     "webpack"
   ],
-  "author": "Eyong Kevin",
+  "author": "David He, Jordan Ren, Alex Ellison, Tony Sancho",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Eyongkevin/portfolio_template/issues"
+    "url": "https://github.com/AlexE543/hack-mit-2019/issues"
   },
-  "homepage": "https://github.com/Eyongkevin/portfolio_template#readme",
+  "homepage": "https://github.com/AlexE543/hack-mit-2019#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
