@@ -16,6 +16,7 @@ export default function FormDialog() {
 
   function handleClose() {
     setOpen(false);
+    
   }
 
   return (
