@@ -13,11 +13,65 @@ const SimpleMap = (props) => {
           defaultZoom={zoom}
         >
           <Marker
-            lat={42.3736}
-            lng={-71.1097}
-            name="My Marker"
-            color="blue"
+            lat={42.36742}
+            lng={-71.11545}
+            name="Corporal Burns Playground"
           />
+
+          <Marker
+            lat={42.36944}
+            lng={-71.10784}
+            name="Cooper Square Park"
+          />
+
+          <Marker
+            lat={42.36153}
+            lng={-71.1079}
+            name="Dana Park"
+          />
+
+          <Marker
+            lat={42.35803}
+            lng={-71.1078}
+            name="Old Morse Park"
+          />
+
+          <Marker
+            lat={42.35645}
+            lng={-71.10418}
+            name="Fort Washington Park"
+          />
+
+          <Marker
+            lat={42.36141}
+            lng={-71.10149}
+            name="University Park Commons"
+          />
+
+          <Marker
+            lat={42.36849}
+            lng={-71.09994}
+            name="Sennott Park"
+          />  
+
+          <Marker
+            lat={42.36486}
+            lng={-71.09868}
+            name="Clement Morgan Park"
+          />
+
+          <Marker
+            lat={42.36615}
+            lng={-71.0949}
+            name="Green-Rose Heritage Park"
+          />
+
+          <Marker
+            lat={42.37021}
+            lng={-71.09174}
+            name="Donnelly Field"
+          />
+
         </GoogleMapReact>
       </div>
     );
