@@ -1,4 +1,5 @@
 import React from 'react';
+import React, {Component} from 'react'
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Dialog from '@material-ui/core/Dialog';
@@ -42,7 +43,7 @@ export default function FormDialog() {
             Cancel
           </Button>
           <Button onClick={handleClose} color="primary">
-            Login
+            Submit
           </Button>
         </DialogActions>
       </Dialog>
