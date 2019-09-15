@@ -1,5 +1,14 @@
 import json
 from watson_developer_cloud import VisualRecognitionV3
+from picamera import PiCamera
+from time import sleep
+
+camera = PiCamera()
+
+camera.start_preview()
+sleep(5)
+camera.capture('/Images/current_food.jpg')
+camera.stop_preview()
 
 visual_recognition = VisualRecognitionV3(
     version='v3',
@@ -10,7 +19,7 @@ visual_recognition = VisualRecognitionV3(
 '2018-03-19',
 iam_apikey='1gkZwFC_6FexLtghypBX9gMAuTh0SzfmX3i6QOjyYHnq')
 
-image_path = 'C:/Users/Alex Ellison/Desktop/HackMit2019/hack-mit-2019/FoodRecognizer/Images'
+image_path = 'Images'
 
 with open(image_path + '/current_food.jpg', 'rb') as images_file:
     classes = visual_recognition.classify(
