@@ -24,14 +24,34 @@ export default function FormDialog() {
     event.preventDefault()
     const foodLocation = document.getElementById('food_location').value
     const foodType = document.getElementById('food_type').value
-    alert("Donation Form Submitted!\nLocation: " + foodLocation + "\nType of Food: " + foodType + "\nThank You!");
+
+    const stationNumberToName = {
+      1: "Donnelly Field",
+      2: "Cooper Square",
+      3: "Sennott Park",
+      4: "Corporal Burns Playground",
+      5: "Green-Rose Heritage Park",
+      6: "Clement Morgan Park",
+      7: "Dana Park",
+      8: "University Park Commons",
+      9: "Old Morse Park",
+      10: "Fort Washington Park"
+      }
+    alert("Donation Form Submitted!\nLocation: " + stationNumberToName[foodLocation] + "\nType of Food: " + foodType + "\nThank You!");
 
     axios({
       method: 'get',
-      url: 'http://127.0.0.1:5000/donate?foodtype='+foodType+'&location='+foodLocation,
+      url: 'http://127.0.0.1:5000/donate?foodtype='+foodType+'&location='+stationNumberToName[foodLocation],
     })
       .then(function (response) {
         window.location.reload()
+      });
+    axios({
+      method: 'get',
+      url: 'http://172.16.152.86/add/'+foodLocation,
+    })
+      .then(function (response) {
+        console.log('It worked!')
       });
   }
 
