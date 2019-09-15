@@ -68,16 +68,16 @@ export default function CustomizedSelects() {
           id='food_location'
           input={<BootstrapInput name="location" id="location" />}
         >
-          <option value={1}>Donnelly Field</option>
-          <option value={2}>Cooper Square</option>
-          <option value={3}>Sennott Park</option>
-          <option value={4}>Corporal Burns Playground</option>
-          <option value={5}>Green-Rose Heritage Park</option>
-          <option value={6}>Clement Morgan Park</option>
-          <option value={7}>Dana Park</option>
-          <option value={8}>University Park Commons</option>
-          <option value={9}>Old Morse Park</option>
-          <option value={10}>Fort Washington Park</option>
+          <option value={0}>Donnelly Field</option>
+          <option value={1}>Cooper Square</option>
+          <option value={2}>Sennott Park</option>
+          <option value={3}>Corporal Burns Playground</option>
+          <option value={4}>Green-Rose Heritage Park</option>
+          <option value={5}>Clement Morgan Park</option>
+          <option value={6}>Dana Park</option>
+          <option value={7}>University Park Commons</option>
+          <option value={8}>Old Morse Park</option>
+          <option value={9}>Fort Washington Park</option>
         </NativeSelect>
       </FormControl>
     </form>
