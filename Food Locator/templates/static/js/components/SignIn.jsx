@@ -34,9 +34,8 @@ export default function FormDialog() {
         alert("The email or password do not match")
       }
       window.location.reload()
+      setOpen(false);
     })
-
-
   }
 
   return (
@@ -52,7 +51,7 @@ export default function FormDialog() {
             margin="dense"
             id="email"
             label="Email"
-            type="email"
+            type="text"
             fullWidth
           />
           <TextField
@@ -60,7 +59,7 @@ export default function FormDialog() {
             margin="dense"
             id="password"
             label="Password"
-            type="password"
+            type="text"
             fullWidth
           />
         </DialogContent>

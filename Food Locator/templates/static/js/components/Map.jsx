@@ -8,7 +8,7 @@ const SimpleMap = (props) => {
     return (
         <div style={{ height: '100vh', width: '100%' }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: 'AIzaSyCTZmTe7-EJGRY4QoH8t5uJZJt1H0t7NqE' }}
+          bootstrapURLKeys={{ key: 'AIzaSyCrqzggvuTGv5n_4QnJkPKa0ECjz6I5QWk' }}
           defaultCenter={center}
           defaultZoom={zoom}
         >
@@ -52,7 +52,7 @@ const SimpleMap = (props) => {
             lat={42.36849}
             lng={-71.09994}
             name="Sennott Park"
-          />  
+          />
 
           <Marker
             lat={42.36486}

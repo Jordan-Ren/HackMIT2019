@@ -17,6 +17,7 @@ export default function FormDialog() {
 
   function handleClose() {
     setOpen(false);
+<<<<<<< HEAD
 
   }
   function handleSubmit(event) {
@@ -39,6 +40,8 @@ export default function FormDialog() {
     })
 
 
+=======
+>>>>>>> 523d94df326c008faee7bb1821df405d8a469d50
   }
 
   return (
