@@ -17,31 +17,6 @@ export default function FormDialog() {
 
   function handleClose() {
     setOpen(false);
-<<<<<<< HEAD
-
-  }
-  function handleSubmit(event) {
-    event.preventDefault()
-    const company = document.getElementById('company').value
-    const email = document.getElementById('email').value
-    const password = document.getElementById('password').value
-
-    axios({
-      method: 'get',
-      url: 'http://127.0.0.1:5000/signIn?company='+company+'&email='+email+'&password='+password,
-    })
-    .then(function(response) {
-      if (response.data[0]['created'] == 'True') {
-        alert("Email is already associated with an account. Please use another email.")
-      } else {
-        alert("Account Created!")
-      }
-      window.location.reload()
-    })
-
-
-=======
->>>>>>> 523d94df326c008faee7bb1821df405d8a469d50
   }
 
   return (
@@ -81,7 +56,7 @@ export default function FormDialog() {
           <Button onClick={handleClose} color="primary">
             Cancel
           </Button>
-          <Button onClick={handleSubmit} color="primary">
+          <Button onClick={handleClose} color="primary">
             Sign Up
           </Button>
         </DialogActions>
