@@ -65,12 +65,13 @@ export default function CustomizedSelects() {
         <NativeSelect
           value={location}
           onChange={handleChange}
+          id='food_location'
           input={<BootstrapInput name="location" id="location" />}
         >
           <option value="" />
-          <option value={"Location1"}>Location 1</option>
-          <option value={"Location2"}>Location 2</option>
-          <option value={"Location3"}>Location 3</option>
+          <option value={"Location1"}>MIT Student Center</option>
+          <option value={"Location2"}>Harvard Student Center</option>
+          <option value={"Location3"}>Massachusetts General Hospital</option>
         </NativeSelect>
       </FormControl>
     </form>

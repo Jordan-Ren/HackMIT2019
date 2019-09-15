@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
-import Upload from './Upload';
+import DonateForm from './DonateForm';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -24,7 +24,7 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Upload />
+          <DonateForm />
           <Typography align="center" variant="h6" className={classes.title}>
             Food Locator by TEXMIX
           </Typography>
