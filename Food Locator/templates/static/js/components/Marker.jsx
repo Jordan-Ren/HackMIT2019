@@ -12,13 +12,13 @@ const Marker = (props) => {
         url: 'http://127.0.0.1:5000/list?location='+name,
       })
         .then(function (response) {
-          console.log(response);
+          console.log(response.data);
           locationInfo = response;
         });
     }
 
     function handleClick() {
-      console.log("SWAG")
+      renderColor()
     }
     return (
       <div className={style.marker}
