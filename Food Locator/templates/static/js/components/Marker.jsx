@@ -19,6 +19,7 @@ const Marker = (props) => {
 
     function handleClick() {
       renderColor()
+      console.log("handleCLICK");
     }
     return (
       <div className={style.marker}
