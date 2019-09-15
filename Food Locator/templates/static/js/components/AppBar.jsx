@@ -5,6 +5,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import SignIn from './SignIn';
+import SignUp from './SignUp';
+import Upload from './Upload';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -22,10 +24,11 @@ export default function ButtonAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Button color="inherit">Upload</Button>
+          <Upload />
           <Typography align="center" variant="h6" className={classes.title}>
             Food Locator by TEXMIX
           </Typography>
+          <SignUp />
           <SignIn />
         </Toolbar>
       </AppBar>
