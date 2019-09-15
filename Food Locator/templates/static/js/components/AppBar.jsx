@@ -26,7 +26,7 @@ export default function ButtonAppBar() {
         <Toolbar>
           <DonateForm />
           <Typography align="center" variant="h6" className={classes.title}>
-            Food Locator by TEXMIX
+            F.R.E.E. by TEXMIX
           </Typography>
           <SignUp />
           <SignIn />
