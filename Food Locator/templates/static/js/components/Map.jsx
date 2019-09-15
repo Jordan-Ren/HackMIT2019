@@ -3,8 +3,8 @@ import GoogleMapReact from 'google-map-react';
 import Marker from './Marker';
 
 const SimpleMap = (props) => {
-    const [center, setCenter] = useState({lat: 42.3736, lng: -71.1097});
-    const [zoom, setZoom] = useState(13.5);
+    const [center, setCenter] = useState({lat: 42.3636, lng: -71.103});
+    const [zoom, setZoom] = useState(14.5);
     return (
         <div style={{ height: '100vh', width: '100%' }}>
         <GoogleMapReact
