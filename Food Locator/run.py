@@ -17,8 +17,8 @@ def get_location_food():
     cursor = conn.cursor()
     cursor.execute('''SELECT FoodType, TimeEntered FROM HackMit2019.dbo.Donations WHERE Location IN (?)''', location)
     rows = cursor.fetchall()
-    # if len(rows) == 0:
-    #    	return json.dumps({})
+    if len(rows) == 0:
+       	return json.dumps({})
     data = []
     for row in rows:
         print(row)
