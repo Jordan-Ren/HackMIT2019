@@ -1,4 +1,3 @@
-import React from 'react';
 import React, {Component} from 'react'
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
@@ -20,21 +19,36 @@ export default function FormDialog() {
     setOpen(false);
   }
 
+  function handleSubmit(event) {
+    event.preventDefault()
+    const foodLocation = document.getElementById('food_location').value
+    const foodType = document.getElementById('food_type').value
+    alert("Donation Form Submitted!\nLocation: " + foodLocation + "\nType of Food: " + foodType + "\nThank You!");
+
+    axios({
+      method: 'get',
+      url: 'http://127.0.0.1:5000/donate?foodtype='+foodType+'&location='+foodLocation,
+    })
+      .then(function (response) {
+        window.location.reload()
+      });
+  }
+
   return (
     <div>
       <Button color="inherit" onClick={handleClickOpen}>
-        Upload
+        Donate
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-        <DialogTitle id="form-dialog-title">Upload</DialogTitle>
+        <DialogTitle id="form-dialog-title">Donate Form</DialogTitle>
         <DialogContent>
             <LocationMenu />
             <TextField
             autoFocus
             margin="dense"
-            id="foodtype"
+            id="food_type"
             label="Type of Food"
-            type="foodtype"
+            type="text"
             fullWidth
           />
         </DialogContent>
@@ -42,7 +56,7 @@ export default function FormDialog() {
           <Button onClick={handleClose} color="primary">
             Cancel
           </Button>
-          <Button onClick={handleClose} color="primary">
+          <Button onClick={handleSubmit} color="primary">
             Submit
           </Button>
         </DialogActions>
