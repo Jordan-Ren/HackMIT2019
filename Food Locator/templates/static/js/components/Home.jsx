@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Map from './Map';
+import SimpleMap from './Map';
 import AppBar from './AppBar';
 
 const home = {
@@ -10,7 +10,7 @@ export default class Home extends Component {
        return (
           <div style={home}>
             <AppBar />
-            <Map />
+            <SimpleMap />
           </div>
        )
     }
