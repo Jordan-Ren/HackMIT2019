@@ -28,11 +28,6 @@ export default function FormDialog() {
       url: 'http://127.0.0.1:5000/login?&email='+email+'&password='+password,
     })
     .then(function(response) {
-      if (response.data[0]['user_exists'] == 'True') {
-        alert("Logged In!")
-      } else {
-        alert("The email or password do not match")
-      }
       window.location.reload()
       setOpen(false);
     })
